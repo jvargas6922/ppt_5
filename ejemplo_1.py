@@ -21,11 +21,13 @@ try:
     # Seleccionar aleatoriamente un impostor
     impostor = random.choice(jugadores)
     print(f"El impostor es: {impostor}")
+    print("\n")
 
     # palabras secretas
     palabras_secretas = ["manzana", "banana", "naranja", "uva", "pera"]
     palabra_secreta = random.choice(palabras_secretas)
     print(f"La palabra secreta es: {palabra_secreta}")
+    print("\n")
 
     print("La palabra secreta seleccionada corresponde a frutas")
     # definir la cantidad de rondas
@@ -36,10 +38,14 @@ try:
             print(f"{jugador} está participando en la ronda {ronda}.")
             # tenemos que preguntar la palabra a los usuarios.
             palabra = input(f"{jugador}, ingresa la palabra secreta: ")
+            print("\n")
+
             if palabra.lower() == palabra_secreta:
                 print(f"{jugador} ha acertado la palabra secreta!")
+                break
             else:
                 print(f"{jugador} no ha acertado la palabra secreta.")
+                print("\n")
             
 
 except ValueError:
