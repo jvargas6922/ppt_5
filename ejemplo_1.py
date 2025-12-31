@@ -46,8 +46,6 @@ try:
             else:
                 print(f"{jugador} no ha acertado la palabra secreta.")
                 print("\n")
-            
-
 except ValueError:
     print("Por favor, ingrese un número válido para la cantidad de jugadores.")
 
